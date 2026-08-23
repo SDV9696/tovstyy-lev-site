@@ -115,7 +115,7 @@
         <span class="badge-glow"></span>
         <svg class="badge-lion" viewBox="0 0 200 200" aria-hidden="true"><g fill="url(#lionGold)" transform="translate(100,104) scale(1.05)"><path d="M0 -60 L16 -84 L26 -58 L52 -78 L48 -50 L82 -54 L64 -30 L92 -18 L60 -6 L84 18 L54 10 L58 44 L32 24 L20 52 L0 26 L-20 52 L-32 24 L-58 44 L-54 10 L-84 18 L-60 -6 L-92 -18 L-64 -30 L-82 -54 L-48 -50 L-52 -78 L-26 -58 L-16 -84 Z"/></g></svg>
       </span>
-      <p class="eyebrow">Київ · Цілодобово*</p>
+      <p class="eyebrow">Київ · Паб</p>
       <h1>Товстий<br>Лев</h1>
       <p class="hero-slogan">Твій улюблений Паб назавжди!</p>
       <p class="hero-tagline">Найбільший вибір пива та сидру в Україні — паб, який відчувається як другий дім.</p>
@@ -138,7 +138,7 @@
       <div class="info-card">
         <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         <h2>Години роботи</h2>
-        <p data-field="hours">Цілодобово<br><span class="hours-note">* під час дії воєнного стану: 12:00–22:00</span></p>
+        <p data-field="hours">Пн–Чт, Нд: 12:00–21:30<br>Пт–Сб: 12:00–22:30<br><span class="hours-note">за даними системи бронювання</span></p>
       </div>
       <div class="info-card">
         <svg class="info-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
@@ -179,17 +179,60 @@
   <section class="menu-teaser" id="menu">
     <div class="wrap">
       <p class="eyebrow">Меню</p>
-      <h2>Що у нас є</h2>
-      <p>Актуальне меню з цінами — на нашій платформі замовлень, завжди свіже й без застарілого PDF.</p>
-      <div class="menu-categories" role="list">
-        <span role="listitem">🍺 Пиво</span>
-        <span role="listitem">🍏 Сидри</span>
-        <span role="listitem">🥨 Закуски</span>
-        <span role="listitem">🍲 Гарячі страви</span>
+      <h2>Хіти меню</h2>
+      <p>Знімок нашого справжнього меню з системи замовлень — реальні страви, склад і ціни станом на сьогодні.</p>
+      <div class="dish-grid">
+        <div class="dish-card">
+          <p class="dish-name">Burger Blackberry <span class="dish-badge">топ у гостей</span></p>
+          <p class="dish-desc">Котлета з яловичини medium, чіпси з бекону, сир Моцарела, карамелізована цибуля, соус чорничний та «Чедер», булочка Бріош</p>
+          <p class="dish-price">339 ₴</p>
+        </div>
+        <div class="dish-card">
+          <p class="dish-name">Стейк Ribeye</p>
+          <p class="dish-desc">З картоплею по-селянськи і соусом BBQ</p>
+          <p class="dish-price">539 ₴</p>
+        </div>
+        <div class="dish-card">
+          <p class="dish-name">Ребра BBQ з картоплею</p>
+          <p class="dish-desc">Ніжні м'які свинячі реберця у соусі BBQ з квашеною капустою та картоплею по-селянськи</p>
+          <p class="dish-price">749 ₴</p>
+        </div>
+        <div class="dish-card">
+          <p class="dish-name">Beer Snack Mix</p>
+          <p class="dish-desc">Сир фрі, курячі крильця, картопляні кульки з моцарелою і беконом, цибулеві кільця, арахіс, соломка</p>
+          <p class="dish-price">469 ₴</p>
+        </div>
+        <div class="dish-card">
+          <p class="dish-name">Салат Цезар з креветками <span class="dish-badge">новинка</span></p>
+          <p class="dish-desc">Креветки коктейльні, яйце, пармезан, томати, романо, грінки, соус «Цезар»</p>
+          <p class="dish-price">319 ₴</p>
+        </div>
+        <div class="dish-card">
+          <p class="dish-name">Вig set «Fat Lion»</p>
+          <p class="dish-desc">Курячі крильця BBQ, сирні палички, чіпси з лаваша, косичка фрі, цибулеві кільця, три соуси — на компанію</p>
+          <p class="dish-price">719 ₴</p>
+        </div>
       </div>
       <a class="cta cta-primary" href="https://tovstylev.choiceqr.com/menu" target="_blank" rel="noopener">
         Відкрити повне меню (ChoiceQR)
       </a>
+    </div>
+  </section>
+
+  <section class="specials" id="specials" aria-label="Тижневі пропозиції">
+    <div class="wrap">
+      <p class="eyebrow">Щотижня</p>
+      <h2>Спеціальні пропозиції по днях</h2>
+      <div class="specials-grid">
+        <div class="special-card"><p class="special-day">Понеділок</p><p class="special-text">−30% на всі закуски</p></div>
+        <div class="special-card"><p class="special-day">Вівторок</p><p class="special-text">−20% на віскі, класичні коктейлі по 199 ₴</p></div>
+        <div class="special-card"><p class="special-day">Середа</p><p class="special-text">Пивна середа — 3л банка пива, ковбаски BBQ & Corn в подарунок</p></div>
+        <div class="special-card"><p class="special-day">Четвер</p><p class="special-text">−15% на текілу з сангрітою</p></div>
+        <div class="special-card"><p class="special-day">П'ятниця</p><p class="special-text">Шоти 1+1=3</p></div>
+        <div class="special-card"><p class="special-day">Субота</p><p class="special-text">Настоянки 1+1=3</p></div>
+        <div class="special-card"><p class="special-day">Неділя</p><p class="special-text">Ретро-коктейлі по 199 ₴</p></div>
+      </div>
+      <p class="reviews-note">Знижки діють у залі закладу. Також діють −20% для ЗСУ (за документом) та −20% на день народження (протягом 7 днів, за документом).</p>
     </div>
   </section>
 
@@ -226,7 +269,7 @@
       <h2>Що кажуть гості</h2>
       <p>
         Понад 240 відгуків на 2GIS і Plaso.pro — переважно позитивні; на TripAdvisor заклад
-        описують як гарний музичний паб, що працює цілодобово, з дружнім персоналом.
+        описують як гарний музичний паб із дружнім персоналом.
         Читайте самі відгуки на платформах, де їх залишали:
       </p>
       <div class="review-links">
