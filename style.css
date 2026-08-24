@@ -106,7 +106,7 @@ h1, h2 {
   border-bottom: 1px solid var(--line);
 }
 .header-inner { display: flex; align-items: center; gap: 20px; height: 76px; }
-.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-height: 44px; } /* 44px mobile tap-target min, found by Playwright QA checklist 2026-08-24 */
 .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
 .brand-name { font-family: var(--font-display); font-size: 1.15rem; letter-spacing: 0.02em; color: var(--cream); }
 .brand-tag { font-size: 0.7rem; color: var(--cream-faint); text-transform: uppercase; letter-spacing: 0.08em; }
@@ -138,7 +138,7 @@ h1, h2 {
 .cta-ghost:hover { border-color: var(--amber-bright); color: var(--amber-bright); }
 .cta-wide { width: 100%; }
 
-.cta-header { padding: 10px 16px; font-size: 0.88rem; }
+.cta-header { padding: 10px 16px; font-size: 0.88rem; min-height: 44px; } /* 44px mobile tap-target min, found by Playwright QA checklist 2026-08-24 */
 .cta-phone .phone-short { display: none; }
 
 /* ---------- Mobile nav toggle ---------- */
@@ -198,9 +198,12 @@ h1, h2 {
 .info-card h2 { font-family: var(--font-body); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--cream-faint); font-weight: 700; margin-bottom: 8px; }
 .info-card p { margin: 0; color: var(--cream); font-size: 1.02rem; }
 .hours-note { color: var(--cream-faint); font-size: 0.86rem; }
-.info-link { display: inline-block; margin-top: 10px; color: var(--amber-bright); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+/* padding (not just font-size) on .info-link/.tel-link below reaches the 44px mobile
+   tap-target min without changing how the text looks — found by Playwright QA checklist
+   2026-08-24 */
+.info-link { display: inline-block; margin-top: 10px; padding: 11px 0; color: var(--amber-bright); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
 .info-link:hover { text-decoration: underline; }
-.tel-link { color: var(--cream); text-decoration: none; }
+.tel-link { display: inline-block; padding: 11px 0; color: var(--cream); text-decoration: none; }
 .tel-link:hover { color: var(--amber-bright); }
 
 /* ---------- Map embed ---------- */
